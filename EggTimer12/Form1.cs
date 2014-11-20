@@ -136,7 +136,7 @@ namespace EggTimer12
             label3.Text = ss;
             if (h < 10)
             {
-                label1.Text = "0" + hh; 
+                label1.Text = "0" + hh;
             }
             else
             {
@@ -158,7 +158,8 @@ namespace EggTimer12
             {
                 label2.Text = mm;
             }
-        
-    }
+
+        }
+    }  
 }
- }
+
