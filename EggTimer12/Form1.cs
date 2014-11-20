@@ -46,6 +46,12 @@ namespace EggTimer12
         {
             timer1.Stop();
         }
+        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            resetButton();
+        }
+
         private void buttonExex(){
 
             s = s += 1;
@@ -87,6 +93,21 @@ namespace EggTimer12
             {
                 label1.Text = "0" + hh;
             }
+        }
+        private void resetButton(){
+            h = 0;
+            s = 0;
+            m = 0;
+
+            string hh = Convert.ToString("0" + h);
+            string ss = Convert.ToString("0" + s);
+            string mm = Convert.ToString("0" + m);
+
+            label2.Text = mm;
+            label3.Text = ss;
+            label1.Text = hh;
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -137,6 +158,7 @@ namespace EggTimer12
             {
                 label2.Text = mm;
             }
-        }
+        
     }
 }
+ }
