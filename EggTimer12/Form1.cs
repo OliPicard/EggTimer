@@ -22,13 +22,20 @@ namespace EggTimer12
         }
         private void button4_Click(object sender, EventArgs e)
         {
+            Button s = (Button)sender;
+            buttonExex();
             
-            {
-                Button s = (Button)sender;
-                buttonExex();
-            }
         }
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Button m = (Button)sender;
+            buttonExexTwo();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Button h = (Button)sender;
+            buttonExexThree();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -42,14 +49,49 @@ namespace EggTimer12
 
             s = s += 1;
             string ss = Convert.ToString(s);
-            label3.Text = ss;
+            if (s > 9)
+            {
+                label3.Text = ss;
+            }
+            else
+            {
+                label3.Text = "0" + ss;
+            }
         }
 
+        private void buttonExexTwo(){
+            m = m += 1;
+            string mm = Convert.ToString(m);
+            if (m > 9)
+            {
+                label2.Text = mm;
+            }
+            else
+            {
+                label2.Text = "0" + mm; 
+            }
+        }
+
+        private void buttonExexThree()
+        {
+            h = h += 1;
+            string hh = Convert.ToString(h);
+
+            label1.Text = hh;
+            if (h > 9)
+            {
+                label1.Text = hh;
+            }
+            else
+            {
+                label1.Text = "0" + hh;
+            }
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             s = s - 1;
-  
+
             if (s == -1)
             {
                 m -= 1;
@@ -68,10 +110,32 @@ namespace EggTimer12
             string hh = Convert.ToString(h);
             string mm = Convert.ToString(m);
             string ss = Convert.ToString(s);
-            label1.Text = hh;
             label2.Text = mm;
             label3.Text = ss;
-          
+            if (h < 10)
+            {
+                label1.Text = "0" + hh; 
+            }
+            else
+            {
+                label1.Text = hh;
+            }
+            if (s < 10)
+            {
+                label3.Text = "0" + ss;
+            }
+            else
+            {
+                label3.Text = ss;
+            }
+            if (m < 10)
+            {
+                label2.Text = "0" + mm;
+            }
+            else
+            {
+                label2.Text = mm;
+            }
         }
     }
 }
