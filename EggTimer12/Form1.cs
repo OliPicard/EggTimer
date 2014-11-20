@@ -40,12 +40,9 @@ namespace EggTimer12
         }
         private void buttonExex(){
 
-            
-            int s;
-            int m;
-            int h;
-            s = s + 1;  
-
+            s = s += 1;
+            string ss = Convert.ToString(s);
+            label3.Text = ss;
         }
 
 
