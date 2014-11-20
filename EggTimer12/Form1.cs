@@ -20,24 +20,17 @@ namespace EggTimer12
             
             InitializeComponent();
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            {
+                Button s = (Button)sender;
+                buttonExex();
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-            {
-                textBox1.Text = "00";
-            }
-            if (textBox2.Text == "")
-            {
-                textBox2.Text = "00";
-            }
-            if (textBox3.Text == "")
-            {
-                textBox3.Text = "00";
-            }
-            h = Convert.ToInt32(textBox1.Text);
-            m = Convert.ToInt32(textBox2.Text);
-            s = Convert.ToInt32(textBox3.Text);
             timer1.Start();
         }
 
@@ -45,6 +38,16 @@ namespace EggTimer12
         {
             timer1.Stop();
         }
+        private void buttonExex(){
+
+            
+            int s;
+            int m;
+            int h;
+            s = s + 1;  
+
+        }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -71,8 +74,7 @@ namespace EggTimer12
             label1.Text = hh;
             label2.Text = mm;
             label3.Text = ss;
-            
-
+          
         }
     }
 }
