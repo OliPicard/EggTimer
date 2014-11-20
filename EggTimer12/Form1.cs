@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Basic Timer; Written after watching a YouTube tutorial and modified with additional basic logic and buttons.
 namespace EggTimer12
 {
     public partial class Form1 : Form
