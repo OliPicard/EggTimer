@@ -1,10 +1,12 @@
-EggTimer
+EggTimer 12
 Written by OliPicard
 ========
 
 Egg Timer Written in C#
 
 This is a really basic Egg Timer written in C# after watching a YouTube tutorial.
+
+The Latest Executable can be found over at https://github.com/OliPicard/EggTimer/releases/tag/1.1.1
 
 I have also added some new elements to the mix.
 
