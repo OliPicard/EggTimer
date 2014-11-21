@@ -25,7 +25,6 @@ namespace EggTimer12
         {
             Button s = (Button)sender;
             buttonExex();
-            
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -40,17 +39,9 @@ namespace EggTimer12
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            
         }
-        private void button1A(object sender, EventArgs e)
-        {
-            if (s == 0){
-                this.button1A.Enabled = true;
-            }else{
-
-                this.button1A.Enabled = false;
-            }  
-                        
-        }
+        
   
         private void button2_Click(object sender, EventArgs e)
         {
@@ -169,8 +160,20 @@ namespace EggTimer12
             else
             {
                 label2.Text = mm;
-            }    
+            }  
         }
+        private void beaCon(object sender, EventArgs e)
+        {
+         button1 = new Button();
+         if (h == 0 && m == 0 && s == 0){
+             
+             button1.Enabled = true;
+         }else{
+             button1.Enabled = false;
+         }
+        
+        }
+
     }  
 }
 
