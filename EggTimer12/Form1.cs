@@ -164,12 +164,13 @@ namespace EggTimer12
         }
         private void beaCon(object sender, EventArgs e)
         {
+         
          button1 = new Button();
          if (h == 0 && m == 0 && s == 0){
              
-             button1.Enabled = true;
-         }else{
              button1.Enabled = false;
+         }else{
+             button1.Enabled = true;
          }
         
         }
