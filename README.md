@@ -11,6 +11,4 @@ I have also added some new elements to the mix.
 + Added Buttons over manual input.
 + Added Reset Button.
 + Included correct formatting.
-
-**Known bugs**
-If you press start at 00:00:00 the timer will display -01. This shouldn't be happening and will be cleared up once i have figured out how to enable/disable bool objects.
++ Fixed Broken effect if user presses start without entering in a timer number the app will now prompt them to enter in a number. (This fixes the -01 error previously mentioned.)
