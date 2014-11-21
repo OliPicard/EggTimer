@@ -57,6 +57,7 @@ namespace EggTimer12
         
         private void button6_Click(object sender, EventArgs e)
         {
+            timer1.Stop();
             resetButton();
         }
 
@@ -107,7 +108,7 @@ namespace EggTimer12
             h = 0;
             s = 0;
             m = 0;
-
+            
             string hh = Convert.ToString("0" + h);
             string ss = Convert.ToString("0" + s);
             string mm = Convert.ToString("0" + m);
