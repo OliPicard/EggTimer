@@ -15,6 +15,12 @@ I have also added some new elements to the mix.
 + Included correct formatting.
 + Fixed Broken effect if user presses start without entering in a timer number the app will now prompt them to enter in a number. (This fixes the -01 error previously mentioned.)
 + Fixed reset button (which would cause big problems if pressed with the start button.)
++ Now open sourced!  
+
+
+
+
+-----------------------------------------------------
 
 Licence GPL 3.0
  GNU GENERAL PUBLIC LICENSE
