@@ -41,7 +41,17 @@ namespace EggTimer12
         {
             timer1.Start();
         }
+        private void button1A(object sender, EventArgs e)
+        {
+            if (s == 0){
+                this.button1A.Enabled = true;
+            }else{
 
+                this.button1A.Enabled = false;
+            }  
+                        
+        }
+  
         private void button2_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -108,8 +118,10 @@ namespace EggTimer12
             label1.Text = hh;
 
 
+ 
         }
-
+        
+   
         private void timer1_Tick(object sender, EventArgs e)
         {
             s = s - 1;
@@ -157,8 +169,7 @@ namespace EggTimer12
             else
             {
                 label2.Text = mm;
-            }
-
+            }    
         }
     }  
 }
