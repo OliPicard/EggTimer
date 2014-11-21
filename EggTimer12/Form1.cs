@@ -18,8 +18,8 @@ namespace EggTimer12
         int s;
         public Form1()
         {
-            
             InitializeComponent();
+            
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -38,7 +38,14 @@ namespace EggTimer12
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            if (h == 0 && m == 0 && s == 0)
+            {
+                MessageBox.Show("Please Enter a number.");
+            }
+            else
+            {
+                timer1.Start();
+            }
             
         }
         
@@ -56,6 +63,7 @@ namespace EggTimer12
         private void buttonExex(){
 
             s = s += 1;
+
             string ss = Convert.ToString(s);
             if (s > 9)
             {
@@ -76,7 +84,7 @@ namespace EggTimer12
             }
             else
             {
-                label2.Text = "0" + mm; 
+                label2.Text = "0" + mm;
             }
         }
 
@@ -116,7 +124,6 @@ namespace EggTimer12
         private void timer1_Tick(object sender, EventArgs e)
         {
             s = s - 1;
-
             if (s == -1)
             {
                 m -= 1;
@@ -161,17 +168,7 @@ namespace EggTimer12
             {
                 label2.Text = mm;
             }  
-        }
-        private void beaCon(object sender, EventArgs e)
-        {
-         
-         button1 = new Button();
-         if (h == 0 && m == 0 && s == 0){
-             
-             button1.Enabled = false;
-         }else{
-             button1.Enabled = true;
-         }
+   
         
         }
 
